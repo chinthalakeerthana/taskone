@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+    background:#f4f4f4;
+}
+
+header{
+    background:#333;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+nav a{
+    color:white;
+    margin:10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+section{
+    padding:40px;
+    margin:20px;
+    background:white;
+    border-radius:10px;
+}
+
+.skills li{
+    list-style:none;
+    padding:5px;
+}
+
+.project{
+    background:#eee;
+    padding:15px;
+    border-radius:8px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+input, textarea{
+    margin:10px 0;
+    padding:10px;
+}
+
+button{
+    padding:10px;
+    background:#333;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+footer{
+    text-align:center;
+    background:#333;
+    color:white;
+    padding:15px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+<h1>My Portfolio</h1>
+
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section id="about">
+<h2>About Me</h2>
+<p>Hello! I'm a beginner Full Stack Developer learning HTML, CSS, JavaScript, PHP and MySQL.</p>
+</section>
+
+<section id="skills">
+<h2>My Skills</h2>
+<ul class="skills">
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+<li>PHP</li>
+<li>MySQL</li>
+</ul>
+</section>
+
+<section id="projects">
+<h2>My Projects</h2>
+
+<div class="project">
+<h3>Portfolio Website</h3>
+<p>This is my personal portfolio website created using HTML, CSS and JavaScript.</p>
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<form id="contactForm">
+
+<input type="text" id="name" placeholder="kirthana" required>
+
+<input type="email" id="email" placeholder="chinthalakeerthana69@gmail.com" required>
+
+<textarea id="message" placeholder="iam keerthana"></textarea>
+
+<button type="submit">Send</button>
+
+</form>
+
+</section>
+
+<footer>
+<p>© 2025 My Portfolio</p>
+</footer>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e){
+
+e.preventDefault();
+
+let name = document.getElementById("keerthana").value;
+let email = document.getElementById("chinthalakeerthana69@gmail.com").value;
+
+if(name === "" || email === ""){
+alert("Please fill all required fields");
+return;
+}
+
+alert("Form Submitted Successfully!");
+
+});
+</script>
+
+</body>
+</html>
